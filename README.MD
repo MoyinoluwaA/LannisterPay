@@ -1,9 +1,8 @@
-# [Lannister Pay API]()
+# [Lannister Pay API](https://documenter.getpostman.com/view/15779746/UVeJMRmA)
 
 ## Introduction
 
-[Lannister Pay API]() is a HTTP REST API built for Lannister Pay,
-a Payment processing platform.
+[Lannister Pay API](https://documenter.getpostman.com/view/15779746/UVeJMRmA) is a HTTP REST API built for Lannister Pay, a Payment processing platform.
 
 ## Overview
 
@@ -11,6 +10,10 @@ a Payment processing platform.
 
 - Set up Fees Configuration
 - Compute fees for transactions
+
+## Documentation
+
+[Read more in the documentation.](https://documenter.getpostman.com/view/15779746/UVeJMRmA)
 
 
 ## Set Up Development
