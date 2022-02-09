@@ -20,8 +20,8 @@ const FeeController = (serviceContainer, errorResponse) => {
             errorResponse(
 				[{
 					domain: "global",
-					reason: "notFound",
-					message: "Not Found"
+					reason: "badRequest",
+					message: "Bad Request"
 				}], 
 				res, error.message, 400
 			)
@@ -44,17 +44,21 @@ const FeeController = (serviceContainer, errorResponse) => {
             })
 
 		} catch (error) {
-			let statusCode
+			let statusCode, reason, message
 			if (error.message === NO_FEE_SET) {
 				statusCode =  400
+				reason = 'badRequest'
+				message = 'Bad Request'
 			} else {
 				statusCode = 404
+				reason = 'notFound',
+				message = 'Not Found'
 			}
 			errorResponse(
 				[{
 					domain: "global",
-					reason: "notFound",
-					message: "Not Found"
+					reason: reason,
+					message: message
 				}], 
 				res, error.message, statusCode
 			)
